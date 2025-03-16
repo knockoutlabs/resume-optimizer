@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Please enter a valid job posting URL.');
             return;
         }
-        
+
         // Disable button and show progress bar
         analyzeButton.disabled = true;
         buttonText.textContent = 'Analyzing...';
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
             displayError('Failed to analyze resume. Please try again.');
         } finally {
             analyzeButton.disabled = false;
-            buttonText.textContent = 'Analyze Resume';
+            buttonText.textContent = 'Step 3: Optimize my resume!';
             setTimeout(() => { progressBarContainer.style.display = 'none'; }, 500);
         }
     });
